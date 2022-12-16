@@ -13,9 +13,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 shaderFogEnd
 	METHOD _setShaderFogStart (F)V
 		ARG 0 shaderFogStart
-	METHOD _setShaderLights (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;)V
-		ARG 0 lightingVector0
-		ARG 1 lightingVector1
 	METHOD _setShaderLights (Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V
 		ARG 0 lightingVector0
 		ARG 1 lightingVector1
@@ -190,12 +187,8 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 fancyRunnable
 	METHOD setErrorCallback (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
 		ARG 0 callback
-	METHOD setInverseViewRotationMatrix (Lcom/mojang/math/Matrix3f;)V
-		ARG 0 rotationMatrix
 	METHOD setInverseViewRotationMatrix (Lorg/joml/Matrix3f;)V
 		ARG 0 rotationMatrix
-	METHOD setProjectionMatrix (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 projectionMatrix
 	METHOD setProjectionMatrix (Lorg/joml/Matrix4f;)V
 		ARG 0 projectionMatrix
 	METHOD setShader (Ljava/util/function/Supplier;)V
@@ -221,9 +214,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 	METHOD setShaderGameTime (JF)V
 		ARG 0 tickTime
 		ARG 2 partialTicks
-	METHOD setShaderLights (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;)V
-		ARG 0 lightingVector0
-		ARG 1 lightingVector1
 	METHOD setShaderLights (Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V
 		ARG 0 lightingVector0
 		ARG 1 lightingVector1
@@ -233,8 +223,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 	METHOD setShaderTexture (ILnet/minecraft/resources/ResourceLocation;)V
 		ARG 0 shaderTexture
 		ARG 1 textureId
-	METHOD setTextureMatrix (Lcom/mojang/math/Matrix4f;)V
-		ARG 0 textureMatrix
 	METHOD setTextureMatrix (Lorg/joml/Matrix4f;)V
 		ARG 0 textureMatrix
 	METHOD setupDefaultState (IIII)V
@@ -242,22 +230,12 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD setupGui3DDiffuseLighting (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;)V
-		ARG 0 lightingVector0
-		ARG 1 lightingVector1
 	METHOD setupGui3DDiffuseLighting (Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V
-		ARG 0 lightingVector0
-		ARG 1 lightingVector1
-	METHOD setupGuiFlatDiffuseLighting (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;)V
 		ARG 0 lightingVector0
 		ARG 1 lightingVector1
 	METHOD setupGuiFlatDiffuseLighting (Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V
 		ARG 0 lightingVector0
 		ARG 1 lightingVector1
-	METHOD setupLevelDiffuseLighting (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;Lcom/mojang/math/Matrix4f;)V
-		ARG 0 lightingVector0
-		ARG 1 lightingVector1
-		ARG 2 matrix
 	METHOD setupLevelDiffuseLighting (Lorg/joml/Vector3f;Lorg/joml/Vector3f;Lorg/joml/Matrix4f;)V
 		ARG 0 lightingVector0
 		ARG 1 lightingVector1

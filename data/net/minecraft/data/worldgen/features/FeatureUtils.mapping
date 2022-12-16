@@ -1,17 +1,8 @@
 CLASS net/minecraft/data/worldgen/features/FeatureUtils
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lnet/minecraft/core/Holder;
-		ARG 0 registry
 	METHOD bootstrap (Lnet/minecraft/data/worldgen/BootstapContext;)V
 		ARG 0 context
 	METHOD createKey (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
 		ARG 0 name
-	METHOD register (Ljava/lang/String;Lnet/minecraft/world/level/levelgen/feature/Feature;)Lnet/minecraft/core/Holder;
-		ARG 0 name
-		ARG 1 feature
-	METHOD register (Ljava/lang/String;Lnet/minecraft/world/level/levelgen/feature/Feature;Lnet/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration;)Lnet/minecraft/core/Holder;
-		ARG 0 name
-		ARG 1 feature
-		ARG 2 config
 	METHOD register (Lnet/minecraft/data/worldgen/BootstapContext;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/levelgen/feature/Feature;)V
 		ARG 0 context
 		ARG 1 key

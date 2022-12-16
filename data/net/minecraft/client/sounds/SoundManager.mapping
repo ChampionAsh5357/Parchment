@@ -1,9 +1,6 @@
 CLASS net/minecraft/client/sounds/SoundManager
 	METHOD <init> (Lnet/minecraft/client/Options;)V
 		ARG 1 options
-	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/client/Options;)V
-		ARG 1 resourceManager
-		ARG 2 options
 	METHOD addListener (Lnet/minecraft/client/sounds/SoundEventListener;)V
 		ARG 1 listener
 	METHOD apply (Lnet/minecraft/client/sounds/SoundManager$Preparations;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
@@ -41,10 +38,6 @@ CLASS net/minecraft/client/sounds/SoundManager
 	METHOD updateSourceVolume (Lnet/minecraft/sounds/SoundSource;F)V
 		ARG 1 category
 		ARG 2 volume
-	METHOD validateSoundResource (Lnet/minecraft/client/resources/sounds/Sound;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/resources/ResourceManager;)Z
-		ARG 0 sound
-		ARG 1 soundLocation
-		ARG 2 resourceManager
 	METHOD validateSoundResource (Lnet/minecraft/client/resources/sounds/Sound;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/resources/ResourceProvider;)Z
 		ARG 0 sound
 		ARG 1 location
@@ -54,13 +47,6 @@ CLASS net/minecraft/client/sounds/SoundManager
 			ARG 1 soundRegistry
 			ARG 2 cache
 			ARG 3 soundEngine
-		METHOD apply (Ljava/util/Map;Lnet/minecraft/client/sounds/SoundEngine;)V
-			ARG 1 soundRegistry
-			ARG 2 soundManager
 		METHOD handleRegistration (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/resources/sounds/SoundEventRegistration;)V
 			ARG 1 location
 			ARG 2 registration
-		METHOD handleRegistration (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/resources/sounds/SoundEventRegistration;Lnet/minecraft/server/packs/resources/ResourceManager;)V
-			ARG 1 soundLocation
-			ARG 2 soundList
-			ARG 3 resourceManager

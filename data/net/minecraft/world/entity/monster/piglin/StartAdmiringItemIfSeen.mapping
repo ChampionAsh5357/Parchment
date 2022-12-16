@@ -1,9 +1,4 @@
 CLASS net/minecraft/world/entity/monster/piglin/StartAdmiringItemIfSeen
-	METHOD <init> (I)V
-		ARG 1 admireDuration
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (I)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 admireDuration
 	METHOD lambda$create$0 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;ILnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z
@@ -17,7 +12,3 @@ CLASS net/minecraft/world/entity/monster/piglin/StartAdmiringItemIfSeen
 		ARG 5 disableWalkToAdmireItem
 	METHOD lambda$create$2 (ILnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 1 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

@@ -48,7 +48,7 @@ CLASS net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder
 			ARG 1 memory
 		METHOD ifTriggered (Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 trigger
-		METHOD point (Ljava/lang/Object;)Lcom/mojang/datafixers/kinds/App;
+		METHOD point (Ljava/lang/Object;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 value
 		METHOD point (Ljava/util/function/Supplier;Ljava/lang/Object;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 name

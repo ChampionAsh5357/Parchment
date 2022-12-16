@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/SetHiddenState
-	METHOD <init> (II)V
-		ARG 1 stayHiddenSeconds
-		ARG 2 closeEnoughDist
 	METHOD create (II)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 stayHiddenSeconds
 		ARG 1 closeEnoughdist
@@ -14,7 +11,3 @@ CLASS net/minecraft/world/entity/ai/behavior/SetHiddenState
 		ARG 5 heardBellTime
 	METHOD lambda$create$2 (Lorg/apache/commons/lang3/mutable/MutableInt;IILnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 3 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

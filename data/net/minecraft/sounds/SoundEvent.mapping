@@ -1,6 +1,4 @@
 CLASS net/minecraft/sounds/SoundEvent
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 location
 	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;FZ)V
 		ARG 1 location
 		ARG 2 range

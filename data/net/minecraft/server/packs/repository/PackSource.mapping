@@ -6,7 +6,5 @@ CLASS net/minecraft/server/packs/repository/PackSource
 		ARG 1 name
 	METHOD decorateWithSource (Ljava/lang/String;)Ljava/util/function/UnaryOperator;
 		ARG 0 translationKey
-	METHOD decorating (Ljava/lang/String;)Lnet/minecraft/server/packs/repository/PackSource;
-		ARG 0 source
 	METHOD lambda$decorateWithSource$0 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
 		ARG 1 name

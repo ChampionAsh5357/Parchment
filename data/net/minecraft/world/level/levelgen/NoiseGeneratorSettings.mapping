@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/level/levelgen/NoiseGeneratorSettings
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lnet/minecraft/core/Holder;
-		ARG 0 registry
 	METHOD bootstrap (Lnet/minecraft/data/worldgen/BootstapContext;)V
 		ARG 0 context
 	METHOD caves (Lnet/minecraft/data/worldgen/BootstapContext;)Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;
@@ -17,7 +15,3 @@ CLASS net/minecraft/world/level/levelgen/NoiseGeneratorSettings
 		ARG 0 context
 		ARG 1 amplified
 		ARG 2 large
-	METHOD register (Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;)Lnet/minecraft/core/Holder;
-		ARG 0 registry
-		ARG 1 key
-		ARG 2 settings

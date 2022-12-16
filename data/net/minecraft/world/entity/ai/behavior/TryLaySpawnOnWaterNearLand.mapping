@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/TryLaySpawnOnWaterNearLand
-	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)V
-		ARG 1 spawnBlock
-		ARG 2 memoryModule
 	METHOD create (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 spawnBlock
 	METHOD lambda$create$0 (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z

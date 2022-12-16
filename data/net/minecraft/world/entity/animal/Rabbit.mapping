@@ -24,8 +24,6 @@ CLASS net/minecraft/world/entity/animal/Rabbit
 		ARG 1 damageSource
 	METHOD getJumpCompletion (F)F
 		ARG 1 partialTick
-	METHOD getRandomRabbitType (Lnet/minecraft/world/level/LevelAccessor;)I
-		ARG 1 level
 	METHOD getRandomRabbitVariant (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/animal/Rabbit$Variant;
 		ARG 0 level
 		ARG 1 pos
@@ -41,8 +39,6 @@ CLASS net/minecraft/world/entity/animal/Rabbit
 		ARG 1 compound
 	METHOD setJumping (Z)V
 		ARG 1 jumping
-	METHOD setRabbitType (I)V
-		ARG 1 rabbitTypeId
 	METHOD setSpeedModifier (D)V
 		ARG 1 speedModifier
 	METHOD wantsMoreFood ()Z
@@ -61,8 +57,6 @@ CLASS net/minecraft/world/entity/animal/Rabbit
 		METHOD tick ()V
 			COMMENT Keep ticking a continuous task that has already been started
 	CLASS RabbitGroupData
-		METHOD <init> (I)V
-			ARG 1 rabbitType
 		METHOD <init> (Lnet/minecraft/world/entity/animal/Rabbit$Variant;)V
 			ARG 1 variant
 	CLASS RabbitPanicGoal

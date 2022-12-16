@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/BecomePassiveIfMemoryPresent
-	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;I)V
-		ARG 1 moduleType
-		ARG 2 pacifyDuration
 	METHOD create (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;I)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 pacifyingMemory
 		ARG 1 pacifyDuration
@@ -15,7 +12,3 @@ CLASS net/minecraft/world/entity/ai/behavior/BecomePassiveIfMemoryPresent
 		ARG 3 pacifying
 	METHOD lambda$create$3 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ILnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 2 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/VillagerCalmDown
-	METHOD isCloseToEntityThatHurtMe (Lnet/minecraft/world/entity/npc/Villager;)Z
-		ARG 0 villager
 	METHOD lambda$create$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z
 		ARG 1 hurtingEntity
 	METHOD lambda$create$1 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z
@@ -13,9 +11,3 @@ CLASS net/minecraft/world/entity/ai/behavior/VillagerCalmDown
 		ARG 3 nearestHostile
 	METHOD lambda$create$3 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD lambda$isCloseToEntityThatHurtMe$0 (Lnet/minecraft/world/entity/npc/Villager;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 1 entity
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

@@ -1,16 +1,7 @@
 CLASS net/minecraft/world/entity/ai/behavior/DismountOrSkipMounting
-	METHOD <init> (ILjava/util/function/BiPredicate;)V
-		ARG 1 maxWalkDistToRideTarget
-		ARG 2 dontRideIf
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (ILjava/util/function/BiPredicate;)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 maxDistanceFromVehicle
 		ARG 1 shouldStopRiding
-	METHOD isVehicleValid (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)Z
-		ARG 1 entity
-		ARG 2 vehicle
 	METHOD isVehicleValid (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;I)Z
 		ARG 0 entity
 		ARG 1 vehicle
@@ -23,7 +14,3 @@ CLASS net/minecraft/world/entity/ai/behavior/DismountOrSkipMounting
 		ARG 3 rideTarget
 	METHOD lambda$create$2 (ILjava/util/function/BiPredicate;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 2 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

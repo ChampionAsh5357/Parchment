@@ -1,9 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/InsideBrownianWalk
-	METHOD <init> (F)V
-		ARG 1 speedModifier
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/PathfinderMob;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (F)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 speedModifier
 	METHOD lambda$create$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
@@ -22,7 +17,3 @@ CLASS net/minecraft/world/entity/ai/behavior/InsideBrownianWalk
 		ARG 1 walkTarget
 	METHOD lambda$create$6 (FLnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 1 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/PathfinderMob;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

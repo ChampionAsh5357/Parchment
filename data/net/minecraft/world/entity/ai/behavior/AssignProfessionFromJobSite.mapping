@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/AssignProfessionFromJobSite
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD lambda$create$0 (Lnet/minecraft/core/GlobalPos;Lnet/minecraft/server/level/ServerLevel;)Ljava/util/Optional;
 		ARG 1 posLevel
 	METHOD lambda$create$1 (Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/npc/VillagerProfession;)Z
@@ -19,11 +16,3 @@ CLASS net/minecraft/world/entity/ai/behavior/AssignProfessionFromJobSite
 		ARG 2 jobSite
 	METHOD lambda$create$6 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD lambda$start$0 (Lnet/minecraft/core/GlobalPos;Lnet/minecraft/server/level/ServerLevel;)Ljava/util/Optional;
-		ARG 1 level
-	METHOD lambda$start$3 (Lnet/minecraft/world/entity/npc/Villager;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/VillagerProfession;)V
-		ARG 2 prof
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

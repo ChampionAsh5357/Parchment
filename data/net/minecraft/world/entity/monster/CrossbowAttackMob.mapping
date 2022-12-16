@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/entity/monster/CrossbowAttackMob
-	METHOD getProjectileShotVector (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/Vec3;F)Lcom/mojang/math/Vector3f;
-		ARG 1 user
-		ARG 2 vectorTowardTarget
-		ARG 3 projectileAngle
 	METHOD getProjectileShotVector (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/Vec3;F)Lorg/joml/Vector3f;
 		ARG 1 user
 		ARG 2 vectorTowardsTarget

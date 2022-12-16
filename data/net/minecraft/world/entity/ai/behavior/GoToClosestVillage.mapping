@@ -1,10 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/GoToClosestVillage
-	METHOD <init> (FI)V
-		ARG 1 speedModifier
-		ARG 2 closeEnoughDistance
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (FI)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 speedModifier
 		ARG 1 closeEnoughDist
@@ -18,7 +12,3 @@ CLASS net/minecraft/world/entity/ai/behavior/GoToClosestVillage
 		ARG 2 walkTarget
 	METHOD lambda$create$3 (FILnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 2 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/Villager;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

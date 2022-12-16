@@ -1,7 +1,4 @@
 CLASS net/minecraft/world/entity/monster/piglin/StartHuntingHoglin
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD hasHuntedRecently (Lnet/minecraft/world/entity/monster/piglin/AbstractPiglin;)Z
 		ARG 0 piglin
 	METHOD lambda$create$0 (Ljava/util/List;)Ljava/lang/Boolean;
@@ -19,7 +16,3 @@ CLASS net/minecraft/world/entity/monster/piglin/StartHuntingHoglin
 		ARG 4 nearestVisibleAdultPiglins
 	METHOD lambda$create$4 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

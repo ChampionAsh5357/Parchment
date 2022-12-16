@@ -1,12 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/StrollToPoi
-	METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;FII)V
-		ARG 1 memoryType
-		ARG 2 speedModifier
-		ARG 3 closeEnoughDist
-		ARG 4 maxDistanceFromPoi
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/PathfinderMob;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;FII)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 poiPosMemory
 		ARG 1 speedModifier
@@ -21,9 +13,3 @@ CLASS net/minecraft/world/entity/ai/behavior/StrollToPoi
 		ARG 6 poiPos
 	METHOD lambda$create$2 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ILorg/apache/commons/lang3/mutable/MutableLong;FILnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 5 instance
-	METHOD lambda$start$0 (Lnet/minecraft/world/entity/ai/Brain;Lnet/minecraft/core/GlobalPos;)V
-		ARG 2 global
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/PathfinderMob;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

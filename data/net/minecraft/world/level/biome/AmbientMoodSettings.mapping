@@ -4,14 +4,7 @@ CLASS net/minecraft/world/level/biome/AmbientMoodSettings
 		ARG 2 tickDelay
 		ARG 3 blockSearchExtent
 		ARG 4 soundPositionOffset
-	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;IID)V
-		ARG 1 soundEvent
-		ARG 2 tickDelay
-		ARG 3 blockSearchExtent
-		ARG 4 soundPositionOffset
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/biome/AmbientMoodSettings;)Lnet/minecraft/core/Holder;
-		ARG 0 settings
-	METHOD lambda$static$0 (Lnet/minecraft/world/level/biome/AmbientMoodSettings;)Lnet/minecraft/sounds/SoundEvent;
 		ARG 0 settings
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/biome/AmbientMoodSettings;)Ljava/lang/Integer;
 		ARG 0 settings

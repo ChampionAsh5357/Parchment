@@ -1,15 +1,6 @@
 CLASS net/minecraft/world/entity/ai/behavior/MeleeAttack
-	METHOD <init> (I)V
-		ARG 1 cooldownBetweenAttacks
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (I)Lnet/minecraft/world/entity/ai/behavior/OneShot;
 		ARG 0 cooldownBetweenAttacks
-	METHOD getAttackTarget (Lnet/minecraft/world/entity/Mob;)Lnet/minecraft/world/entity/LivingEntity;
-		ARG 1 mob
-	METHOD isHoldingUsableProjectileWeapon (Lnet/minecraft/world/entity/Mob;)Z
-		ARG 1 mob
 	METHOD lambda$create$0 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;ILnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;J)Z
 		ARG 6 level
 		ARG 7 mob
@@ -23,7 +14,3 @@ CLASS net/minecraft/world/entity/ai/behavior/MeleeAttack
 		ARG 1 instance
 	METHOD lambda$isHoldingUsableProjectileWeapon$3 (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 stack
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime

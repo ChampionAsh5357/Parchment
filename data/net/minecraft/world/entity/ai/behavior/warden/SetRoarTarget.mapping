@@ -1,6 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/warden/SetRoarTarget
-	METHOD <init> (Ljava/util/function/Function;)V
-		ARG 1 targetFinderFunction
 	METHOD create (Ljava/util/function/Function;)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 targetFinder
 	METHOD lambda$create$0 (Ljava/util/function/Function;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/warden/Warden;J)Z

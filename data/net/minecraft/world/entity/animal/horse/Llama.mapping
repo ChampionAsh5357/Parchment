@@ -49,13 +49,9 @@ CLASS net/minecraft/world/entity/animal/horse/Llama
 		ARG 1 strength
 	METHOD setSwag (Lnet/minecraft/world/item/DyeColor;)V
 		ARG 1 color
-	METHOD setVariant (I)V
-		ARG 1 variant
 	METHOD spit (Lnet/minecraft/world/entity/LivingEntity;)V
 		ARG 1 target
 	CLASS LlamaGroupData
-		METHOD <init> (I)V
-			ARG 1 variant
 		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Llama$Variant;)V
 			ARG 1 variant
 	CLASS LlamaAttackWolfGoal

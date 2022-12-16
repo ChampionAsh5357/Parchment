@@ -69,8 +69,6 @@ CLASS net/minecraft/world/entity/Mob
 		ARG 2 chanceMultiplier
 	METHOD equipItemIfPossible (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 stack
-	METHOD equipItemIfPossible (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 stack
 	METHOD finalizeSpawn (Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData;
 		ARG 1 level
 		ARG 2 difficulty
@@ -119,8 +117,6 @@ CLASS net/minecraft/world/entity/Mob
 		ARG 0 stack
 	METHOD lambda$checkAndHandleImportantInteractions$2 (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Mob;)V
 		ARG 2 mob
-	METHOD lambda$removeAfterChangingDimensions$3 (Lnet/minecraft/world/item/ItemStack;)V
-		ARG 0 slot
 	METHOD lambda$removeAfterChangingDimensions$4 (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 0 slot
 	METHOD lookAt (Lnet/minecraft/world/entity/Entity;FF)V

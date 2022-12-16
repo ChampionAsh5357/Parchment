@@ -1,16 +1,4 @@
 CLASS net/minecraft/world/entity/ai/behavior/GoToWantedItem
-	METHOD <init> (FZI)V
-		ARG 1 speedModifier
-		ARG 2 hasTarget
-		ARG 3 maxDistToWalk
-	METHOD <init> (Ljava/util/function/Predicate;FZI)V
-		ARG 1 predicate
-		ARG 2 speedModifier
-		ARG 3 hasTarget
-		ARG 4 maxDistToWalk
-	METHOD checkExtraStartConditions (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 1 level
-		ARG 2 owner
 	METHOD create (FZI)Lnet/minecraft/world/entity/ai/behavior/BehaviorControl;
 		ARG 0 speedModifier
 		ARG 1 hasTarget
@@ -20,10 +8,6 @@ CLASS net/minecraft/world/entity/ai/behavior/GoToWantedItem
 		ARG 1 speedModifier
 		ARG 2 hasTarget
 		ARG 3 maxDistToWalk
-	METHOD getClosestLovedItem (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/entity/item/ItemEntity;
-		ARG 1 entity
-	METHOD isOnPickupCooldown (Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 1 entity
 	METHOD lambda$create$0 (Lnet/minecraft/world/entity/LivingEntity;)Z
 		ARG 0 entity
 	METHOD lambda$create$1 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Ljava/util/function/Predicate;IFLnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z
@@ -37,7 +21,3 @@ CLASS net/minecraft/world/entity/ai/behavior/GoToWantedItem
 		ARG 7 itemPickupCooldownTicks
 	METHOD lambda$create$3 (ZLjava/util/function/Predicate;IFLnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 4 instance
-	METHOD start (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V
-		ARG 1 level
-		ARG 2 entity
-		ARG 3 gameTime
