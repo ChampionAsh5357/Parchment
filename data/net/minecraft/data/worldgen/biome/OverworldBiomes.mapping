@@ -35,6 +35,10 @@ CLASS net/minecraft/data/worldgen/biome/OverworldBiomes
 		ARG 0 isDeepOcean
 	METHOD ocean (Z)Lnet/minecraft/world/level/biome/Biome;
 		ARG 0 isDeepOcean
+	METHOD oldGrowthTaiga (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;Z)Lnet/minecraft/world/level/biome/Biome;
+		ARG 0 placedFeatureGetter
+		ARG 1 configuredWorldCarverGetter
+		ARG 2 isSpruce
 	METHOD plains (ZZZ)Lnet/minecraft/world/level/biome/Biome;
 		ARG 1 isSnowy
 	METHOD taiga (Z)Lnet/minecraft/world/level/biome/Biome;

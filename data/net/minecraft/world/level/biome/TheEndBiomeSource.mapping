@@ -7,3 +7,5 @@ CLASS net/minecraft/world/level/biome/TheEndBiomeSource
 		ARG 5 barrens
 	METHOD <init> (Lnet/minecraft/core/Registry;)V
 		ARG 1 registry
+	METHOD create (Lnet/minecraft/core/HolderGetter;)Lnet/minecraft/world/level/biome/TheEndBiomeSource;
+		ARG 0 biomeGetter

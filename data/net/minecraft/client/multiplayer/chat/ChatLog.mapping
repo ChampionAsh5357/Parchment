@@ -8,10 +8,14 @@ CLASS net/minecraft/client/multiplayer/chat/ChatLog
 		ARG 1 id
 	METHOD before (I)I
 		ARG 1 id
+	METHOD codec (I)Lcom/mojang/serialization/Codec;
+		ARG 0 size
 	METHOD contains (I)Z
 		ARG 1 id
 	METHOD index (I)I
 		ARG 1 index
+	METHOD lambda$codec$0 (ILjava/util/List;)Lcom/mojang/serialization/DataResult;
+		ARG 1 events
 	METHOD lookup (I)Lnet/minecraft/client/multiplayer/chat/LoggedChatEvent;
 		ARG 1 id
 	METHOD lookupEntry (I)Lnet/minecraft/client/multiplayer/chat/ChatLog$Entry;

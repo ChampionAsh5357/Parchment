@@ -3,3 +3,5 @@ CLASS net/minecraft/client/renderer/debug/HeightMapRenderer
 		ARG 1 minecraft
 	METHOD getColor (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lcom/mojang/math/Vector3f;
 		ARG 1 types
+	METHOD getColor (Lnet/minecraft/world/level/levelgen/Heightmap$Types;)Lorg/joml/Vector3f;
+		ARG 1 types

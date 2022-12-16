@@ -13,6 +13,8 @@ CLASS net/minecraft/network/chat/ChatType
 		ARG 1 entity
 	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lnet/minecraft/core/Holder;
 		ARG 0 registry
+	METHOD bootstrap (Lnet/minecraft/data/worldgen/BootstapContext;)V
+		ARG 0 context
 	METHOD create (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
 		ARG 0 key
 	CLASS Bound

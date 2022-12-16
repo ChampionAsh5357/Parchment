@@ -56,6 +56,8 @@ CLASS net/minecraft/world/entity/animal/horse/Llama
 	CLASS LlamaGroupData
 		METHOD <init> (I)V
 			ARG 1 variant
+		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Llama$Variant;)V
+			ARG 1 variant
 	CLASS LlamaAttackWolfGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/horse/Llama;)V
 			ARG 1 llama

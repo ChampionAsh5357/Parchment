@@ -8,6 +8,13 @@ CLASS net/minecraft/client/renderer/texture/TextureAtlasSprite
 		ARG 6 x
 		ARG 7 y
 		ARG 8 image
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/texture/SpriteContents;IIII)V
+		ARG 1 atlasLocation
+		ARG 2 contents
+		ARG 3 originX
+		ARG 4 originY
+		ARG 5 x
+		ARG 6 y
 	METHOD createTicker (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$Info;III)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite$AnimatedTexture;
 		ARG 1 spriteInfo
 		ARG 2 imageWidth

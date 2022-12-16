@@ -1,6 +1,10 @@
 CLASS net/minecraft/network/chat/LastSeenMessagesValidator
+	METHOD <init> (I)V
+		ARG 1 lastSEendCount
 	METHOD addPending (Lnet/minecraft/network/chat/LastSeenMessages$Entry;)V
 		ARG 1 entry
+	METHOD addPending (Lnet/minecraft/network/chat/MessageSignature;)V
+		ARG 1 signature
 	METHOD hasDuplicateProfiles (Lnet/minecraft/network/chat/LastSeenMessages;)Z
 		ARG 1 lastSeenMessages
 	CLASS ErrorCondition

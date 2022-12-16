@@ -4,18 +4,27 @@ CLASS net/minecraft/data/DataGenerator
 		ARG 2 inputFolders
 		ARG 3 version
 		ARG 4 alwaysGenerate
+	METHOD <init> (Ljava/nio/file/Path;Lnet/minecraft/WorldVersion;Z)V
+		ARG 1 rootOutputFolder
+		ARG 2 version
+		ARG 3 alwaysGenerate
 	METHOD addProvider (ZLnet/minecraft/data/DataProvider;)V
 		ARG 1 run
 		ARG 2 provider
 	METHOD createPathProvider (Lnet/minecraft/data/DataGenerator$Target;Ljava/lang/String;)Lnet/minecraft/data/DataGenerator$PathProvider;
 		ARG 1 target
 		ARG 2 kind
+	METHOD getBuiltinDatapack (ZLjava/lang/String;)Lnet/minecraft/data/DataGenerator$PackGenerator;
+		ARG 1 toRun
+		ARG 2 providerPrefix
 	METHOD getInputFolders ()Ljava/util/Collection;
 		COMMENT Gets a collection of folders to look for data to convert in
 	METHOD getOutputFolder ()Ljava/nio/file/Path;
 		COMMENT Gets the location to put generated data into
 	METHOD getOutputFolder (Lnet/minecraft/data/DataGenerator$Target;)Ljava/nio/file/Path;
 		ARG 1 target
+	METHOD getVanillaPack (Z)Lnet/minecraft/data/DataGenerator$PackGenerator;
+		ARG 1 toRun
 	METHOD run ()V
 		COMMENT Runs all the previously registered data providers.
 	CLASS Target
@@ -31,3 +40,10 @@ CLASS net/minecraft/data/DataGenerator
 			ARG 2 extension
 		METHOD json (Lnet/minecraft/resources/ResourceLocation;)Ljava/nio/file/Path;
 			ARG 1 location
+	CLASS PackGenerator
+		METHOD <init> (Lnet/minecraft/data/DataGenerator;ZLjava/lang/String;Lnet/minecraft/data/PackOutput;)V
+			ARG 2 toRun
+			ARG 3 providerPrefix
+			ARG 4 output
+		METHOD addProvider (Lnet/minecraft/data/DataProvider$Factory;)Lnet/minecraft/data/DataProvider;
+			ARG 1 factory

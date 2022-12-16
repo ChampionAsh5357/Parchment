@@ -5,3 +5,6 @@ CLASS net/minecraft/commands/CommandBuildContext
 		ARG 1 registryResourceKey
 	METHOD missingTagAccessPolicy (Lnet/minecraft/commands/CommandBuildContext$MissingTagAccessPolicy;)V
 		ARG 1 missingTagAccessPolicy
+	CLASS Configurable
+		METHOD missingTagAccessPolicy (Lnet/minecraft/commands/CommandBuildContext$MissingTagAccessPolicy;)V
+			ARG 1 missingTagAccessPolicy

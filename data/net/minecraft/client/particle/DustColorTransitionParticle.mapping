@@ -12,6 +12,9 @@ CLASS net/minecraft/client/particle/DustColorTransitionParticle
 	METHOD randomizeColor (Lcom/mojang/math/Vector3f;F)Lcom/mojang/math/Vector3f;
 		ARG 1 vector
 		ARG 2 multiplier
+	METHOD randomizeColor (Lorg/joml/Vector3f;F)Lorg/joml/Vector3f;
+		ARG 1 vector
+		ARG 2 multiplier
 	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprites

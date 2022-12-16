@@ -8,6 +8,9 @@ CLASS net/minecraft/client/resources/metadata/animation/AnimationMetadataSection
 	METHOD calculateFrameSize (II)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 defWidth
 		ARG 2 defHeight
+	METHOD calculateFrameSize (II)Lnet/minecraft/client/resources/metadata/animation/FrameSize;
+		ARG 1 width
+		ARG 2 height
 	METHOD forEachFrame (Lnet/minecraft/client/resources/metadata/animation/AnimationMetadataSection$FrameOutput;)V
 		ARG 1 output
 	METHOD getFrameHeight (I)I

@@ -1,6 +1,11 @@
 CLASS net/minecraft/server/players/PlayerList
 	FIELD playersByUUID Ljava/util/Map;
 		COMMENT A map containing the key-value pairs for UUIDs and their EntityPlayerMP objects.
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/LayeredRegistryAccess;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
+		ARG 1 server
+		ARG 2 registries
+		ARG 3 playerIo
+		ARG 4 maxPlayers
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/PlayerDataStorage;I)V
 		ARG 1 server
 		ARG 2 frozen
@@ -27,6 +32,11 @@ CLASS net/minecraft/server/players/PlayerList
 		ARG 3 senderPlayer
 		ARG 4 chatSender
 		ARG 5 boundChatType
+	METHOD broadcastChatMessage (Lnet/minecraft/network/chat/PlayerChatMessage;Ljava/util/function/Predicate;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/ChatType$Bound;)V
+		ARG 1 message
+		ARG 2 shouldFilterMessageTo
+		ARG 3 sender
+		ARG 4 boundChatType
 	METHOD broadcastChatMessage (Lnet/minecraft/network/chat/PlayerChatMessage;Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/network/chat/ChatType$Bound;)V
 		ARG 1 message
 		ARG 2 sender
@@ -69,6 +79,8 @@ CLASS net/minecraft/server/players/PlayerList
 		ARG 1 username
 	METHOD getPlayerCount ()I
 		COMMENT Returns the number of players currently on the server.
+	METHOD getPlayerForLogin (Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/server/level/ServerPlayer;
+		ARG 1 profile
 	METHOD getPlayerForLogin (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 1 profile
 		ARG 2 profileKey
@@ -131,6 +143,8 @@ CLASS net/minecraft/server/players/PlayerList
 	METHOD updateEntireScoreboard (Lnet/minecraft/server/ServerScoreboard;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 scoreboard
 		ARG 2 player
+	METHOD verifyChatTrusted (Lnet/minecraft/network/chat/PlayerChatMessage;)Z
+		ARG 1 message
 	METHOD verifyChatTrusted (Lnet/minecraft/network/chat/PlayerChatMessage;Lnet/minecraft/network/chat/ChatSender;)Z
 		ARG 1 message
 		ARG 2 sender

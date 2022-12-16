@@ -55,6 +55,9 @@ CLASS net/minecraft/nbt/NbtUtils
 		ARG 1 prettyPrintArray
 	METHOD readBlockPos (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/core/BlockPos;
 		ARG 0 tag
+	METHOD readBlockState (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 0 blockGetter
+		ARG 1 tag
 	METHOD readBlockState (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/block/state/BlockState;
 		ARG 0 tag
 	METHOD readGameProfile (Lnet/minecraft/nbt/CompoundTag;)Lcom/mojang/authlib/GameProfile;

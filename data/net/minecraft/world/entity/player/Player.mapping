@@ -1,6 +1,11 @@
 CLASS net/minecraft/world/entity/player/Player
 	FIELD gameProfile Lcom/mojang/authlib/GameProfile;
 		COMMENT The player's unique game profile
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 yRot
+		ARG 4 gameProfile
 	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;FLcom/mojang/authlib/GameProfile;Lnet/minecraft/world/entity/player/ProfilePublicKey;)V
 		ARG 1 level
 		ARG 2 pos

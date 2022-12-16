@@ -36,7 +36,7 @@ CLASS net/minecraft/world/entity/EntityType
 		COMMENT Tries to get the entity type associated by the key.
 		ARG 0 key
 	METHOD create (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/level/Level;)Ljava/util/Optional;
-		ARG 0 compound
+		ARG 0 tag
 		ARG 1 level
 	METHOD create (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/nbt/CompoundTag;Ljava/util/function/Consumer;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/MobSpawnType;ZZ)Lnet/minecraft/world/entity/Entity;
 		ARG 1 level
@@ -82,6 +82,10 @@ CLASS net/minecraft/world/entity/EntityType
 	METHOD lambda$create$0 (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 entityType
 	METHOD lambda$create$1 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD lambda$create$4 (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/entity/Entity;
+		ARG 1 entityType
+	METHOD lambda$create$5 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD lambda$loadEntityRecursive$3 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/level/Level;Ljava/util/function/Function;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/entity/Entity;
 		ARG 3 entity

@@ -84,3 +84,6 @@ CLASS net/minecraft/client/renderer/block/model/FaceBakery
 	METHOD setupShape (Lcom/mojang/math/Vector3f;Lcom/mojang/math/Vector3f;)[F
 		ARG 1 pos1
 		ARG 2 pos2
+	METHOD setupShape (Lorg/joml/Vector3f;Lorg/joml/Vector3f;)[F
+		ARG 1 min
+		ARG 2 max

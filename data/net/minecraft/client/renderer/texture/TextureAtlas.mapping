@@ -37,6 +37,8 @@ CLASS net/minecraft/client/renderer/texture/TextureAtlas
 		ARG 4 mipLevel
 	METHOD reload (Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;)V
 		ARG 1 preparations
+	METHOD updateFilter (Lnet/minecraft/client/renderer/texture/SpriteLoader$Preparations;)V
+		ARG 1 preparations
 	METHOD updateFilter (Lnet/minecraft/client/renderer/texture/TextureAtlas$Preparations;)V
 		ARG 1 preparations
 	CLASS Preparations

@@ -17,6 +17,8 @@ CLASS net/minecraft/data/recipes/RecipeProvider
 		ARG 2 dye
 	METHOD buildCraftingRecipes (Ljava/util/function/Consumer;)V
 		ARG 0 finishedRecipeConsumer
+	METHOD buildRecipes (Ljava/util/function/Consumer;)V
+		ARG 1 writer
 	METHOD buttonBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
 		ARG 0 button
 		ARG 1 material
@@ -158,8 +160,20 @@ CLASS net/minecraft/data/recipes/RecipeProvider
 		ARG 2 resultItem
 	METHOD nineBlockStorageRecipes (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;)V
 		ARG 0 finishedRecipeConsumer
+		ARG 1 unpackedCategory
+		ARG 2 unpacked
+		ARG 3 packedCategory
+		ARG 4 packed
 	METHOD nineBlockStorageRecipes (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 finishedRecipeConsumer
+		ARG 1 unpackedCategory
+		ARG 2 unpacked
+		ARG 3 packedCategory
+		ARG 4 packed
+		ARG 5 packedName
+		ARG 6 packedGroup
+		ARG 7 unpackedName
+		ARG 8 unpackedGroup
 	METHOD nineBlockStorageRecipes (Ljava/util/function/Consumer;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;)V
 		ARG 0 finishedRecipeConsumer
 		ARG 1 unpacked
@@ -174,6 +188,12 @@ CLASS net/minecraft/data/recipes/RecipeProvider
 		ARG 6 unpackingRecipeGroup
 	METHOD nineBlockStorageRecipesRecipesWithCustomUnpacking (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 finishedRecipeConsumer
+		ARG 1 unpackedCategory
+		ARG 2 unpacked
+		ARG 3 packedCategory
+		ARG 4 packed
+		ARG 5 unpackedName
+		ARG 6 unpackedGroup
 	METHOD nineBlockStorageRecipesRecipesWithCustomUnpacking (Ljava/util/function/Consumer;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 finishedRecipeConsumer
 		ARG 1 unpacked
@@ -182,6 +202,12 @@ CLASS net/minecraft/data/recipes/RecipeProvider
 		ARG 4 unpackingRecipeGroup
 	METHOD nineBlockStorageRecipesWithCustomPacking (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 finishedRecipeConsumer
+		ARG 1 unpackedCategory
+		ARG 2 unpacked
+		ARG 3 packedCategory
+		ARG 4 packed
+		ARG 5 packedName
+		ARG 6 packedGroup
 	METHOD nineBlockStorageRecipesWithCustomPacking (Ljava/util/function/Consumer;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 finishedRecipeConsumer
 		ARG 1 unpacked
@@ -385,6 +411,7 @@ CLASS net/minecraft/data/recipes/RecipeProvider
 		ARG 1 category
 		ARG 2 packed
 		ARG 3 unpacked
+		ARG 4 criterionName
 	METHOD trapdoorBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
 		ARG 0 trapdoor
 		ARG 1 material

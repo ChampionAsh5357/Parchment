@@ -2,11 +2,18 @@ CLASS net/minecraft/world/level/block/entity/SkullBlockEntity
 	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 pos
 		ARG 2 blockState
+	METHOD animation (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/SkullBlockEntity;)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 blockEntity
 	METHOD dragonHeadAnimation (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/SkullBlockEntity;)V
 		ARG 0 level
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity
+	METHOD getAnimation (F)F
+		ARG 1 partialTick
 	METHOD getMouthAnimation (F)F
 		ARG 1 partialTicks
 	METHOD lambda$updateGameprofile$2 (Ljava/util/function/Consumer;Lcom/mojang/authlib/GameProfile;)V

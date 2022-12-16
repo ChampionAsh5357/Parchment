@@ -9,6 +9,8 @@ CLASS net/minecraft/commands/arguments/NbtPathArgument
 		ARG 0 ch
 	METHOD lambda$createTagPredicate$1 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)Z
 		ARG 1 other
+	METHOD lambda$createTagPredicate$3 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)Z
+		ARG 1 other
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 path
 	METHOD parse (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;

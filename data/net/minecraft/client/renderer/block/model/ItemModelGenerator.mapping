@@ -2,8 +2,13 @@ CLASS net/minecraft/client/renderer/block/model/ItemModelGenerator
 	METHOD checkTransition (Lnet/minecraft/client/renderer/block/model/ItemModelGenerator$SpanFacing;Ljava/util/List;Lnet/minecraft/client/renderer/texture/SpriteContents;IIIIIZ)V
 		ARG 1 spanFacing
 		ARG 2 listSpans
+		ARG 3 contents
+		ARG 4 frameIndex
 		ARG 5 pixelX
 		ARG 6 pixelY
+		ARG 7 spriteWidth
+		ARG 8 spriteHeight
+		ARG 9 transparent
 	METHOD checkTransition (Lnet/minecraft/client/renderer/block/model/ItemModelGenerator$SpanFacing;Ljava/util/List;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIZ)V
 		ARG 1 spanFacing
 		ARG 2 listSpans
@@ -48,6 +53,8 @@ CLASS net/minecraft/client/renderer/block/model/ItemModelGenerator
 		ARG 4 pixelY
 		ARG 5 spiteWidth
 		ARG 6 spriteHeight
+	METHOD lambda$getSpans$0 (IILnet/minecraft/client/renderer/texture/SpriteContents;Ljava/util/List;I)V
+		ARG 5 frame
 	METHOD lambda$getSpans$0 (IILnet/minecraft/client/renderer/texture/TextureAtlasSprite;Ljava/util/List;I)V
 		ARG 5 frame
 	METHOD processFrames (ILjava/lang/String;Lnet/minecraft/client/renderer/texture/SpriteContents;)Ljava/util/List;

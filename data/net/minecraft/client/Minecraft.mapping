@@ -18,6 +18,9 @@ CLASS net/minecraft/client/Minecraft
 	METHOD addCustomNbtData (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/block/entity/BlockEntity;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 stack
 		ARG 2 te
+	METHOD addCustomNbtData (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/block/entity/BlockEntity;)V
+		ARG 1 stack
+		ARG 2 be
 	METHOD clearLevel (Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 1 screen
 	METHOD clearResourcePacksOnError (Ljava/lang/Throwable;Lnet/minecraft/network/chat/Component;)V

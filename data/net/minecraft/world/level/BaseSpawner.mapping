@@ -13,6 +13,10 @@ CLASS net/minecraft/world/level/BaseSpawner
 		ARG 2 pos
 	METHOD getOrCreateDisplayEntity (Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 level
+	METHOD getOrCreateDisplayEntity (Lnet/minecraft/world/level/Level;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/Entity;
+		ARG 1 level
+		ARG 2 random
+		ARG 3 pos
 	METHOD isNearPlayer (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 pos
@@ -42,6 +46,11 @@ CLASS net/minecraft/world/level/BaseSpawner
 		ARG 2 pos
 	METHOD setEntityId (Lnet/minecraft/world/entity/EntityType;)V
 		ARG 1 type
+	METHOD setEntityId (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 type
+		ARG 2 level
+		ARG 3 random
+		ARG 4 pos
 	METHOD setNextSpawnData (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/SpawnData;)V
 		ARG 1 level
 		ARG 2 pos

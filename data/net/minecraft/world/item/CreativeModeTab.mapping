@@ -16,7 +16,7 @@ CLASS net/minecraft/world/item/CreativeModeTab
 		ARG 0 row
 		ARG 1 column
 	METHOD contains (Lnet/minecraft/world/item/ItemStack;)Z
-		ARG 1 item
+		ARG 1 stack
 	METHOD fillItemList (Lnet/minecraft/core/NonNullList;)V
 		COMMENT Fills {@code items} with all items that are in this group.
 		ARG 1 items
@@ -51,10 +51,12 @@ CLASS net/minecraft/world/item/CreativeModeTab
 			ARG 1 item
 			ARG 2 tabVisibility
 		METHOD acceptAll (Ljava/util/Collection;)V
-			ARG 1 items
+			ARG 1 stacks
 		METHOD acceptAll (Ljava/util/Collection;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V
-			ARG 1 items
+			ARG 1 stacks
 			ARG 2 tabVisibility
+		METHOD lambda$acceptAll$0 (Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;Lnet/minecraft/world/item/ItemStack;)V
+			ARG 2 stack
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/item/CreativeModeTab$Row;I)V
 			ARG 1 row
@@ -65,6 +67,10 @@ CLASS net/minecraft/world/item/CreativeModeTab
 			ARG 1 displayItemsGenerator
 		METHOD icon (Ljava/util/function/Supplier;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
 			ARG 1 icon
+		METHOD lambda$static$0 (Lnet/minecraft/world/flag/FeatureFlagSet;Lnet/minecraft/world/item/CreativeModeTab$Output;Z)V
+			ARG 0 enabledFeatures
+			ARG 1 output
+			ARG 2 displayOperatorCreativeTab
 		METHOD title (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
 			ARG 1 title
 		METHOD type (Lnet/minecraft/world/item/CreativeModeTab$Type;)Lnet/minecraft/world/item/CreativeModeTab$Builder;
@@ -77,3 +83,4 @@ CLASS net/minecraft/world/item/CreativeModeTab
 		METHOD accept (Lnet/minecraft/world/flag/FeatureFlagSet;Lnet/minecraft/world/item/CreativeModeTab$Output;Z)V
 			ARG 1 enabledFeatures
 			ARG 2 output
+			ARG 3 displayOperatorCreativeTab

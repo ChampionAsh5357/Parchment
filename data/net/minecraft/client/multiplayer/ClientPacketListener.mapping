@@ -244,6 +244,8 @@ CLASS net/minecraft/client/multiplayer/ClientPacketListener
 		ARG 1 enabledFeatures
 	METHOD lambda$handleRemoveEntities$1 (I)V
 		ARG 1 entityId
+	METHOD lambda$handleRemoveEntities$2 (I)V
+		ARG 1 entityId
 	METHOD markMessageAsProcessed (Lnet/minecraft/network/chat/PlayerChatMessage;Z)V
 		ARG 1 chatMessage
 		ARG 2 acknowledged

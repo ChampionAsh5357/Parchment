@@ -14,6 +14,9 @@ CLASS net/minecraft/client/renderer/texture/MipmapGenerator
 	METHOD generateMipLevels (Lcom/mojang/blaze3d/platform/NativeImage;I)[Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 image
 		ARG 1 mipLevel
+	METHOD generateMipLevels ([Lcom/mojang/blaze3d/platform/NativeImage;I)[Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 images
+		ARG 1 mipLevel
 	METHOD getPow22 (I)F
 		ARG 0 value
 	METHOD lambda$static$0 ([F)V

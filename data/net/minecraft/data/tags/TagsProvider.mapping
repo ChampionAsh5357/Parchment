@@ -20,6 +20,8 @@ CLASS net/minecraft/data/tags/TagsProvider
 			ARG 2 registry
 		METHOD add (Ljava/lang/Object;)Lnet/minecraft/data/tags/TagsProvider$TagAppender;
 			ARG 1 item
+		METHOD add (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/data/tags/TagsProvider$TagAppender;
+			ARG 1 key
 		METHOD add ([Ljava/lang/Object;)Lnet/minecraft/data/tags/TagsProvider$TagAppender;
 			ARG 1 toAdd
 		METHOD add ([Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/data/tags/TagsProvider$TagAppender;
